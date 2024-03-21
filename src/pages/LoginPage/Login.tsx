@@ -81,11 +81,6 @@ const LoginPage: React.FC = () => {
               <PasswordInput onChange={passwordCheck} placeholder="Password" />
             </div>
             {error && <p className="error">{error}</p>}
-            <div className="forgot">
-              <Link to="/forgotpassword" className="forgot">
-                Forgot your password?
-              </Link>
-            </div>
             {login && (
               <p className="text-green-500 text-base mt-1 font-medium">
                 {login}
