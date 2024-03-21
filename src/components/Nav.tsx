@@ -4,16 +4,11 @@ import { links } from "../composables/data";
 import { Link } from "react-router-dom";
 import { useIsLoggedIn } from "../hooks";
 interface NavProps {
-  scrollToView: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
   onSidebarOpen: () => void;
   sidebarOpen: boolean;
 }
 
-const Nav: React.FC<NavProps> = ({
-  scrollToView,
-  onSidebarOpen,
-  sidebarOpen,
-}) => {
+const Nav: React.FC<NavProps> = ({ onSidebarOpen, sidebarOpen }) => {
   // const user = useUser();
   const isLoggedIn = useIsLoggedIn();
   console.log(isLoggedIn);

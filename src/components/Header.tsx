@@ -3,15 +3,8 @@ import { useState, useEffect } from "react";
 
 export const Header = () => {
   // State to manage user authentication status
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn] = useState(false);
 
-  // Function to check user authentication status
-  // const checkAuthStatus = () => {
-  // const user = auth.currentUser;
-  // setIsLoggedIn(!!user); // Set isLoggedIn based on whether user exists or not
-  // };
-
-  // Effect to run once on component mount to check authentication status
   useEffect(() => {
     // checkAuthStatus();
   }, []);
