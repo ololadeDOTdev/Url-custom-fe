@@ -4,7 +4,6 @@ import { apiHandler, parseShortenedLink } from "../../../function";
 import Table from "../../components/Table";
 import ShortenUrl from "../../components/ShortenUrl";
 import { ILink } from "../../../types";
-import InfoCard from "../../components/InfoCard";
 import { Link } from "react-router-dom";
 
 export function MyLinks() {
